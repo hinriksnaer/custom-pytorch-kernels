@@ -10,7 +10,7 @@ def benchmark_model(model, dataloader, training=False, warmup=1, reps=5):
     device = next(model.parameters()).device
     model.train(training)
     criterion = torch.nn.CrossEntropyLoss()
-    optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
+    optimizer = torch.optim.AdamW(model.parameters(), lr=0.01)
 
     correct = 0
     total_samples = 0

@@ -5,13 +5,13 @@ A simple implementation of custom MLP kernels for PyTorch. This includes both a 
 ```
 
 --- Inference Benchmark ---
-Baseline MLP (PyTorch)   | Latency: 0.19 ms | Throughput: 5,474,053 samples/sec | Accuracy: 7.87%
-Custom CUDA MLP          | Latency: 3.96 ms | Throughput: 256,761 samples/sec | Accuracy: 9.96%
-Custom Triton MLP        | Latency: 0.22 ms | Throughput: 4,669,434 samples/sec | Accuracy: 7.89%
+Baseline MLP (PyTorch)   | Latency: 0.19 ms | Throughput: 5,377,260 samples/sec
+Custom CUDA MLP          | Latency: 4.04 ms | Throughput: 251,912 samples/sec
+Custom Triton MLP        | Latency: 0.21 ms | Throughput: 4,754,199 samples/sec
 
 --- Training Benchmark ---
-Baseline MLP (PyTorch)   | Latency: 0.70 ms | Throughput: 1,453,485 samples/sec | Accuracy: 67.50%
-Custom CUDA MLP          | Latency: 56.19 ms | Throughput: 18,099 samples/sec | Accuracy: 66.84%
-Custom Triton MLP        | Latency: 0.79 ms | Throughput: 1,287,270 samples/sec | Accuracy: 66.41%
+Baseline MLP (PyTorch)   | Latency: 0.84 ms | Throughput: 1,203,966 samples/sec | Accuracy: 96.47%
+Custom CUDA MLP          | Latency: 53.43 ms | Throughput: 19,032 samples/sec | Accuracy: 96.31%
+Custom Triton MLP        | Latency: 0.95 ms | Throughput: 1,067,412 samples/sec | Accuracy: 96.47%
 ```
 
