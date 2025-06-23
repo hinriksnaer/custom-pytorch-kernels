@@ -1,0 +1,14 @@
+
+[project]
+name = "pytorch-kernels"
+version = "0.1.0"
+description = "CUDA extension for custom MLP in PyTorch"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.setuptools]
+packages = ["extensions.cuda"]
+
+[build-system]
+requires = ["setuptools", "wheel", "torch", "ninja"]
+build-backend = "setuptools.build_meta"
